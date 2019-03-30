@@ -26,7 +26,7 @@ def get_bool_from_env(name, default_value):
     return default_value
 
 
-DEBUG = get_bool_from_env('DEBUG', True)
+DEBUG = get_bool_from_env('DEBUG', False)
 
 SITE_ID = 1
 
@@ -382,7 +382,7 @@ bootstrap4 = {
 TEST_RUNNER = 'tests.runner.PytestTestRunner'
 
 ALLOWED_HOSTS = get_list(
-    os.environ.get('ALLOWED_HOSTS', 'localhost,127.0.0.1'))
+    os.environ.get('ALLOWED_HOSTS', 'localhost,127.0.0.1,www.easygame.store'))
 ALLOWED_GRAPHQL_ORIGINS = os.environ.get('ALLOWED_GRAPHQL_ORIGINS', '*')
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')

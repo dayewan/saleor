@@ -1,5 +1,5 @@
 [[source]]
-url = "https://pypi.python.org/simple"
+url = "https://mirrors.aliyun.com/pypi/simple/"
 verify_ssl = true
 name = "pypi"
 
@@ -56,8 +56,8 @@ raven = "==6.9.0"
 requests = ">=1.2.0"
 social-auth-app-django = ">=2.0.0"
 text-unidecode = "*"
-uwsgi = {version = ">=2.0.0", platform_system = "!= 'Windows'"}
-celery = {version = "*", extras = ["redis"]}
+uwsgi = {version = ">=2.0.0",platform_system = "!= 'Windows'"}
+celery = {version = "*",extras = ["redis"]}
 redis = "<3.0.0"  # this can be safely removed after Celery v4.2.2 is released
 kombu = "<=4.3.0" # kombu version is pinned to avoid issues described here https://github.com/celery/celery/issues/5369
 weasyprint = ">=0.42.2"
@@ -66,6 +66,7 @@ braintree = "==3.49.0"
 razorpay = ">=1.1.1"
 stripe = "*"
 "urllib3" = "*"
+gunicorn = "*"
 
 [dev-packages]
 pytest = "==4.0.2"
